@@ -1,39 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .reset-all-styles {
     all: initial;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hide {
+    display: none !important;
+}
+
+.container {
+    width: max(92vw, 992px);
+    margin: 0 auto;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 77.8px;
+    height: 79.72px;
     padding: 15px 0;
-
 }
 
 .logo {
     width: max-content;
-    height: max-content;
+    height: 50px;
     padding: 0 15px;
 }
 
 .logo img {
     display: block;
     width: 136.15px;
-    height: 49.04px;
+    height: 100%;
     object-fit: contain;
     max-width: 140px;
-    padding-top: 8px;
-    padding-bottom: 7px;
+    padding: 7px 0;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 15px;
     text-align: center;
+    height: 50px;
     gap: 5px;
+    padding: 0 15px;
+}
+
+.navMain > ul {
+    min-width: 56vw;
+    max-width: 62vw;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkgray;
+}
+
+.navMain > ul> li {
+    display: inline-block;
+    height: 32px;
+}
+
+.navMain-dropdown-item {
+    padding: 5px 15px;
+    position: relative;
+}
+
+.navMain-dropdown-item:hover {
+    background-color: #e87722;
+}
+
+.portfolio-list {
+    width: max-content;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    background-color: #0c2340;
+}
+
+.navMain-dropdown-item__name {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #000;
+}
+
+.navMain-dropdown-item .bi-chevron-down {
+    font-weight: 700;
+    color: #000;
+}
+
+.portfolio-list li {
+    list-style: none;
+}
+
+.portfolio-list li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 .languages {
@@ -42,7 +126,6 @@ nav {
     border-radius: 50%;
     border: solid 1px black;
 }
-
 
 .languages, .search ,.menu {
     width: 30.04px;
@@ -57,7 +140,7 @@ nav {
 }
 
 .menu i {
-    font-size: 27px; 
+    font-size: 20px; 
     color: #000; 
 }
 
@@ -70,6 +153,22 @@ nav {
     width: auto;
     background-color: darkgray;
 }
+
+.footer--top {
+    background-color: #ddd;
+}
+
+.footer--top ul li a {
+    color: #0c2340;
+    margin: 0;
+    padding: 0;
+}
+
+.footer--top ul li a p {
+    text-transform: uppercase;
+    margin: 0;
+}
+
 
 
 
