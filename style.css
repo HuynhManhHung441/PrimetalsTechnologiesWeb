@@ -74,8 +74,9 @@ nav {
 }
 
 .navMain > ul> li {
-    display: inline-block;
-    height: 32px;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .navMain-dropdown-item {
@@ -106,7 +107,7 @@ nav {
 }
 
 .navMain-dropdown-item .bi-chevron-down {
-    font-weight: 700;
+    -webkit-text-stroke: 0.8px;
     color: #000;
 }
 
@@ -172,13 +173,8 @@ nav {
 
 /* Competences */
 .competences {
-    height: 100vh; /* Chiếm toàn bộ chiều cao của trang */
-    display: flex;
-    flex-direction: column;
-    justify-content: start; /* Căn giữa theo chiều dọc */
-    align-items: start; /* Căn giữa theo chiều ngang */
-    text-align: center; /* Căn giữa văn bản bên trong */
     background-color: chartreuse;
+    padding: 0 140px;
 }
 
 .competences h1 {
@@ -191,7 +187,45 @@ nav {
 }
 .gallery {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
 }
+
+.gallery > a {
+    position: relative;
+    
+}
+
+.gallery > img {
+    display: inline-block;
+    width: 100%;
+    aspect-ratio: 16/10;
+    object-fit: fill;
+}
+
+.gallery .img-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    text-wrap: wrap;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 6px 8px;
+    background-color: rgba(0,0,0,0.3);
+    height: 30%;
+    transition: height 0.9s;
+    font-size: 14px;
+}
+
+.gallery .img-title:hover {
+    height: 100%;
+}
+
+
+
 /* end */
 
 
