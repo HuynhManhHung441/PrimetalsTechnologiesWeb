@@ -170,5 +170,29 @@ nav {
 }
 
 
+/* Competences */
+.competences {
+    height: 100vh; /* Chiếm toàn bộ chiều cao của trang */
+    display: flex;
+    flex-direction: column;
+    justify-content: start; /* Căn giữa theo chiều dọc */
+    align-items: start; /* Căn giữa theo chiều ngang */
+    text-align: center; /* Căn giữa văn bản bên trong */
+    background-color: chartreuse;
+}
+
+.competences h1 {
+    background-color: #e87722;
+    text-align: left;
+}
+
+.competences > p {
+    background-color: aqua;
+}
+.gallery {
+    display: flex;
+}
+/* end */
+
 
 
