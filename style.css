@@ -173,17 +173,21 @@ nav {
 
 /* Competences */
 .competences {
-    background-color: chartreuse;
     padding: 0 140px;
+    margin: 20px 0;
 }
 
 .competences h1 {
-    background-color: #e87722;
     text-align: left;
+    text-transform: uppercase;
+    font-size: 27px;
+    font-weight: 900;
+    margin-bottom: 25px;
 }
 
 .competences > p {
-    background-color: aqua;
+    font-size: 17px;
+    margin-bottom: 12px;
 }
 .gallery {
     display: flex;
@@ -200,7 +204,7 @@ nav {
 .gallery > img {
     display: inline-block;
     width: 100%;
-    aspect-ratio: 16/10;
+    /* aspect-ratio: 16/10; */
     object-fit: fill;
 }
 
