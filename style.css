@@ -197,14 +197,13 @@ nav {
 }
 
 .gallery > a {
+    display: flex;
     position: relative;
-    
 }
 
 .gallery > img {
     display: inline-block;
     width: 100%;
-    /* aspect-ratio: 16/10; */
     object-fit: fill;
 }
 
